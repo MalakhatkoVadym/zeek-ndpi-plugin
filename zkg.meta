@@ -1,0 +1,8 @@
+[package]
+description = This plugin provides ndpi support for Zeek.
+tags = zeek plugin, packet dumper, ndpi
+plugin_dir = build/Zeek_Ndpi.tgz
+build_command = ./configure && make -C build
+depends =
+  zkg >=2.0
+  zeek >=3.0.0
