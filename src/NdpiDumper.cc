@@ -26,9 +26,7 @@ NdpiDumper::~NdpiDumper()
 
 void NdpiDumper::Open()
 	{
-	std::string command = "ndpiReader -i enp0s3 -m 5 -p " +  props.path + " >> /var/logs/current/ndpi.log"; 
-	system(command.c_str());
-	//original_main();
+	original_main();
 	Opened(props);
 	}
 
